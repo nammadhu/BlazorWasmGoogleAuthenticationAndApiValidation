@@ -32,6 +32,21 @@ namespace TestAuthenticationApi
             },
             ValidateLifetime = true
             };
+
+        /* Facebook configuration
+        options.Authority = "https://graph.facebook.com/";
+        options.TokenValidationParameters = new TokenValidationParameters
+            {
+            ValidateIssuer = true,
+            ValidIssuer = "https://graph.facebook.com/",
+            ValidateAudience = true,
+            ValidAudiences = new List<string>
+            {
+                "YOUR_FACEBOOK_APP_ID", // Replace with your actual Facebook app ID of client wasm
+                // Add more audiences as needed
+            },
+            ValidateLifetime = true
+            };*/
     });
 
             builder.Services.AddCors(options =>
